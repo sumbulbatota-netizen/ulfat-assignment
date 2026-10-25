@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question01:First and Last Name    
+      let firstname = "ULFAT";
+      let lastname = "NASIR";
+      console.log(firstname +""+ lastname); 
+      // Question 02:Arthmetic Operations
+   let num1 = 3;
+   let num2 = 15;
+   let num3 = 2;
+   console.log(num1 + num2 + num3);
+   console.log(num1 - num2 - num3);
+   console.log(num1 * num2 * num3);
+    // Question 03:Temprature Checker
+    let temp = prompt("Enter Temprature");
+    if(temp<=0) {
+        console.log("Freezing");        
+    }else{
+        console.log("Not Freezing");        
+    }      
+    // Question 04:Age Category//
+    let age= prompt("Enter Your Age");
+    if(age>=0 && age<=12) {
+        console.log("Child");
+    }else if(age>= 13 && age<= 19)
+    {
+        console.log("Teenager");
+    }else if(age>=20 && age <=59)
+    {
+        consle.log("Adult");
+    }else{
+        console.log("Senior Citizen");
+    }
+    // Question 05: Electricity Bill Calculator
+    let units = prompt("Enter Units");
+    let bill = 0;
+    if(units <= 100) {
+        bill = units * 10; 
+    } else if (units<= 200){
+        bill = 100 + 10 + (units - 100)* 15;
+    } else {
+     bill = 100 + 10 + 100 * 15 + (units - 200) * 20;
+    }  
+     console.log(bill);
+    //Question 06: Traffic Light//
+    let color = prompt("Enter Traffic Light Color")
+    if(color == "red") {
+        console.log("Stop");
+    } else if(color == "green") {
+        console.log("Go");
+    }else{
+        console.log("Invalid Color");
+    }
+    //Question 07: PocketMoney Checker
+    let pocketmoney=prompt("Enter Pocket Money");
+    if(pocketmoney>500) {
+        console.log("You can Buy a Gift")
+    }else{
+        console.log("Save your money");
+    }
+    //Question 8: Free Delivery Checker
+    let shopping = prompt("Enter Shopping Amount")
+    if(shopping>=2000) {
+        console.log("Free Delivrery");
+    }else{
+        console.log("Delivery Charges Apply");
+    }
+    </script>
+    
+</body>
+</html>
